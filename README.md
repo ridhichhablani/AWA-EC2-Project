@@ -1,12 +1,12 @@
 # AWA-EC2-Project
 Installing jenkins on AWS EC2.
-#Update the installed packages
+## Update the installed packages
 sudo su
 yum update
-#Install Java 8
+## Install Java 8
 java -version
 yum install java-1.8.0
-#Install Jenkins
+## Install Jenkins
 1.) Download the latest Jenkins package from the Red Hat Repository
 
 wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
@@ -20,32 +20,32 @@ Note: If you've previously imported the key from Jenkins, the "rpm --import" wil
 
 yum install -y jenkins
 
-#Start Jenkins Service
+## Start Jenkins Service
 You can start the jenkins service by issuing the following command
 
 service jenkins start
 
-#Check Jenkins Installation
+## Check Jenkins Installation
 You can check the Jenkins process running on your server by issuing the following command
 
 ps -aux | grep jenkins
 
-#Auto-Start Jenkins Service on system reboot
+## Auto-Start Jenkins Service on system reboot
 You can ensure that Jenkins will start following a system reboot by issuing the following command
 
 chkconfig jenkins on
 
-#Stop Jenkins Service
+## Stop Jenkins Service
 As needed, you can stop the Jenkins process by issuing the following command
 
 service jenkins stop
 
-#Restart Jenkins Service
+## Restart Jenkins Service
 You can restart the Jenkins process by issuing the following command
 
 service jenkins restart
 
-#Configure Jenkins
+## Configure Jenkins
 1.) Access Jenkins through browser
 
 http://YOUR-SERVER-PUBLIC-IP:8080
